@@ -1,13 +1,13 @@
 package edu.escuelaing.arem;
 
-/**
- * Hello world!
- *
- */
+import static spark.Spark.*;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        System.out.println( "Spark Web app started ..." );
+        get("/hello", (req, res) -> "Hello World");
+        
     }
 }
