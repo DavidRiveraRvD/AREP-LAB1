@@ -4,8 +4,8 @@ import static spark.Spark.*;
 import spark.Request;
 import spark.Response;
 
-public class App {
 
+public class App {
     /**
      * This main method uses SparkWeb static methods and lambda functions to
      * create a simple Hello World web app. It maps the lambda function to the
@@ -18,7 +18,6 @@ public class App {
         get("/inputdata", (req, res) -> inputDataPage(req, res));
         get("/results", (req, res) -> resultsPage(req, res));
     }
-
     private static String inputDataPage(Request req, Response res) {
         String pageContent
                 = "<!DOCTYPE html>"
