@@ -17,6 +17,7 @@ public class App {
         port(getPort());
         get("/inputdata", (req, res) -> inputDataPage(req, res));
         get("/results", (req, res) -> resultsPage(req, res));
+        get("/stockservice", (req, res) ->);
     }
     private static String inputDataPage(Request req, Response res) {
         String pageContent
@@ -56,5 +57,11 @@ public class App {
             return Integer.parseInt(System.getenv("PORT"));
         }
         return 4567; //returns default port if heroku-port isn't set (i.e. on localhost)
+    }
+    
+    private static void getStockInfo(Request req, Response res){
+        HttpStockService stockService = HttpStockService.createService();
+        responseStr = stockService.getStockInfoAsJSON();
+        
     }
 }
