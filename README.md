@@ -6,4 +6,4 @@
 Heroku: https://arep-lab001.herokuapp.com/    
 Git: https://github.com/DavidRiveraRvD/AREP-LAB1.git   
 
-**RAMA:** Main  
+**RAMA:** Master
