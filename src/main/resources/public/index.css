@@ -1,0 +1,19 @@
+.box{
+    justify-content: center;
+}
+.container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px 0px;
+    border-radius: 20px;
+    background-color: #3d3c31;
+    box-shadow: 3px 3px 9px 3px #000;
+}
+.container.h1{
+    color:#fff;
+}
+.card{
+    border-radius: 40px;
+    box-shadow: 5px 5px 20px 5px #000;
+    background-color: #3d3531;
+}

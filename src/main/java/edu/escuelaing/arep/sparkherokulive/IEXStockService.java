@@ -3,27 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package edu.escuelaing.arep.sparkherokulive;
 
 /**
  *
  * @author Usuario
  */
-public class AlphaAdvantageHttpStockService extends HttpStockService{
-    String stock = "fb";
-    String fun = "TIME_SERIES_DAILY";
-
+public class IEXStockService extends HttpStockService{
+    String stock="aapl";
     @Override
-    public String getURL(){
-        return "https://www.alphavantage.co/query?function="+fun+"&symbol="fb+"&apikey=Q1QZFVJQ21K7C6XM";
+    public String getURL() {
+        return "https://cloud.iexapis.com/stable/stock/"+stock+"/quote?token=pk_8a6cc2e8c79a4d01a8e938fb171f1d9c";
     }
     @Override
-    public void setStock(String stock){
+    public void setStock(String stock) {
         this.stock = stock;
     }
 
     @Override
     public void setPeriod(String time) {
-        this.fun= time;
     }
 }

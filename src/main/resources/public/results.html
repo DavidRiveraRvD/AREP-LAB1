@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" >
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="results.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <title>Stock Exchange</title>
+</head>
+<body>
+<div class="box">
+    <div class="container">
+        <h1 class="text-center text-light">Stock Exchange</h1>
+        <br/>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-10">
+                <form id="myform" class="card card-sm" action="results.html" method="GET" >
+                    <div class="card-body row no-gutters align-items-center">
+                        <div class="col-3">
+                            <select id="sl-menu-series" name="sl-menu-series" class="selectpicker" data-style="btn-info">
+                                <option value="TIME_SERIES_DAILY" >Time Series (Daily)</option>
+                                <option value="TIME_SERIES_WEEKLY" >Time Series (Weekly)</option>
+                                <option value="TIME_SERIES_MONTHLY" >Time Series (Monthly)</option>
+                            </select>
+                        </div>
+                        <!--end of col-->
+                        <div class="col-7">
+                            <input id="data-exchange" name="data-exchange" class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search e.j: IBM, FB,TWT">
+                        </div>
+                        <!--end of col-->
+                        <div class="col-auto">
+                            <button type="button" id="btn-success" class="btn btn-lg btn-success" >
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                </form>
+                <div class="overflow-auto mh-60" style="height:350px;">
+                    <table id="mytable" class="table table-dark">
+                        <thead>
+                        <tr>
+                            <th scope="col" data-field="timestamp">timestamp</th>
+                            <th scope="col" data-field="1. open">open</th>
+                            <th scope="col" data-field="high">high</th>
+                            <th scope="col" data-field="low">low</th>
+                            <th scope="col" data-field="close">close</th>
+                            <th scope="col" data-field="volume">volume</th>
+                        </tr>
+                        </thead>
+                        <tbody id="demo" style="overflow-y: scroll;"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
