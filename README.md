@@ -7,3 +7,6 @@ Heroku: https://arep-lab001.herokuapp.com/
 Git: https://github.com/DavidRiveraRvD/AREP-LAB1.git      
 
 **RAMA:** Master  
+
+**PROBLEMA CON EL DESPLIEGUE**
+**:(**

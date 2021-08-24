@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-public class App {
+public class App{
     /**
      * This main method uses SparkWeb static methods and lambda functions to
      * create a simple Hello World web app. It maps the lambda function to the

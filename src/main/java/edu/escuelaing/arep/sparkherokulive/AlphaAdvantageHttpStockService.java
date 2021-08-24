@@ -15,7 +15,7 @@ public class AlphaAdvantageHttpStockService extends HttpStockService{
 
     @Override
     public String getURL(){
-        return "https://www.alphavantage.co/query?function="+fun+"&symbol="fb+"&apikey=Q1QZFVJQ21K7C6XM";
+        return "https://www.alphavantage.co/query?function="+fun+"&symbol="fb+"&apikey=B94U975WONAHGDI1";
     }
     @Override
     public void setStock(String stock){
