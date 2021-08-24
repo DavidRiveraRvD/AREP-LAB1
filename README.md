@@ -3,10 +3,10 @@
 
 **Nombre:** David Rivera   
  
-##Heroku   
+##Heroku
 https://arep-lab001.herokuapp.com/    
 
 
-##Git   
+##Git
 https://github.com/DavidRiveraRvD/AREP-LAB1.git   
 **RAMA:** Main  
